@@ -4,12 +4,13 @@ import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 
 const Checkout = () => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="checkout">
       <div className="checkout_left">
         <img className="checkout_ad" src="src\assets\images\ad_image.jpg" />
         <div>
+          <h3>Hello, {!user ? "Guest" : user.email}</h3>
           <h2 className="checkout_title">Your Shopping basket</h2>
 
           {basket.map((item) => (
