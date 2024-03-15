@@ -29,3 +29,22 @@
   border-color: #a88734 #9c7e31 #846a29;
   color: #111;
 }
+
+.formator {
+  display: inline-block;
+  border: none;
+  background-color: #f3f3f3;
+  font-size: 18px;
+  font-weight: bolder;
+  max-width: 150px;
+}
+
+.subtotal_items .num {
+  display: inline-block;
+  margin-right: -1px;
+}
+
+.subtotal_items {
+  display: inline-block;
+  white-space: nowrap;
+}
